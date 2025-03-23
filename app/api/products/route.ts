@@ -134,7 +134,7 @@ export async function POST(request: Request) {
     price,
     category,
   };
-  products.products.push(newProduct);
+  products.products = [newProduct, ...products.products];
   products.categories = Array.from(new Set(products.products.map((product) => product.category)));
   return new Response(JSON.stringify(newProduct), {
     status: 201,

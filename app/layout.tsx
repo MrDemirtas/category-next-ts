@@ -1,4 +1,5 @@
 import "./reset.css";
+import "./global.css";
 
 import { Metadata } from "next";
 import { ReactNode } from "react";
